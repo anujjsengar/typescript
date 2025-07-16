@@ -14,3 +14,18 @@ function fun1(para:string):number{
 }
 
 let res:Number=fun1("Anuj")
+
+
+function chotu(){
+    console.log("Hello, Chhotu");
+}
+
+function bada(fn:()=>void):boolean{
+    setTimeout(function(){
+        fn();
+    },2000)
+    return true;
+}
+
+
+let result:boolean=bada(chotu);
